@@ -1,0 +1,74 @@
+/*when screen in smaller than 300px wide*/
+@media only screen and (max-width: 300px) {
+  body {
+    background-color: orangered;
+    font-size: 12px;
+  }
+}
+
+/*when screen is between 300px and 768px wide*/
+@media only screen and (max-width: 768px) and (min-width: 301px) {
+  body {
+    background-color: lightgreen;
+    font-size: 10px;
+  }
+  #top {
+    display: inline-block;
+  }
+  #small {
+    width: 30%;
+    float: left;
+  }
+  #medium {
+    width: 60%;
+    float: left;
+    margin-left: 3px;
+  }
+  #large {
+    width: 90%;
+
+  }
+}
+
+/*when screen is wider than 768px*/
+@media only screen and (min-width: 769px) {
+  body {
+    background-color: lightblue;
+    font-size: 12px;
+
+    #small {
+      float: left;
+      width: 30%;
+    }
+
+    #medium {
+      float: left;
+      width: 30%;
+    }
+
+    #large {
+      float: left;
+      width: 30%;
+    }
+  }
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+p {
+  font-family: "Times New Roman", serif;
+}
+
+#large, #medium, #small {
+  border: 1px dashed black;
+  margin-left: 3px;
+  padding: 5px;
+}
+
+#container {
+  width: 90%;
+}
